@@ -121,7 +121,6 @@ std::string RimeState::subModeLabel() {
         } else {
             if (engine_->config().latinModeNameFromSchema.value()) {
                 result = asciiModeName(/*abbrev=*/true, false);
-                RIME_DEBUG() << "exit_ansii: " << result;
             } else if (status.schema_name && status.schema_name[0] != '.') {
                 result = status.schema_name;
                 if (!result.empty() &&
