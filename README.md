@@ -15,3 +15,9 @@ tiandic 的修改版
 
 注: label提示即状态切换时, 光标下的提示
 
+### 自定义图标示例
+
+假设自定义ASCII模式的图标为 `fc.png`
+
+1. 在`~/.local/share/icons/hicolor/48x48/apps/`下放置`fc.png`
+2. `fcitx5-configtool` -> `中州韵` -> `配置` -> `ASCII 模式图标` 填写 `fc`
