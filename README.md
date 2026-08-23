@@ -20,4 +20,5 @@ tiandic 的修改版
 假设自定义ASCII模式的图标为 `fc.png`
 
 1. 在`~/.local/share/icons/hicolor/48x48/apps/`下放置`fc.png`
-2. `fcitx5-configtool` -> `中州韵` -> `配置` -> `ASCII 模式图标` 填写 `fc`
+2. 更新缓存: `gtk-update-icon-cache -f -t ~/.local/share/icons/hicolor`
+3. `fcitx5-configtool` -> `中州韵` -> `配置` -> `ASCII 模式图标` 填写 `fc`
