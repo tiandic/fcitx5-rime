@@ -74,19 +74,21 @@ void RimeState::clear() {
 
 void RimeState::activate() { maybeSyncProgramNameToSession(); }
 
-std::string RimeState::asciiModeName(bool abbrev) {
+std::string RimeState::asciiModeName(bool abbrev, bool state) {
     std::string result = _("Latin Mode");
-    if (abbrev) {
+    if (abbrev && state) {
         result = "abc";
+    } else if (!state) {
+        result = "中";
     }
     if (engine_->config().latinModeNameFromSchema.value()) {
         RimeStringSlice label = engine_->api()->get_state_label_abbreviated(
-            session(), "ascii_mode", True, abbrev);
+            session(), "ascii_mode", state, abbrev);
         if (label.str && label.length > 0) {
             result.assign(label.str, label.length);
         }
     }
-    if (abbrev) {
+    if (abbrev && state) {
         result = engine_->isCapsLockOn(&ic_)
                      ? engine_->config().capsLockLabelPrompt.value()
                      : result;
@@ -100,7 +102,7 @@ std::string RimeState::subMode() {
         if (status.is_disabled) {
             result = "\xe2\x8c\x9b";
         } else if (status.is_ascii_mode) {
-            result = asciiModeName(/*abbrev=*/false);
+            result = asciiModeName(/*abbrev=*/false, true);
         } else if (status.schema_name && status.schema_name[0] != '.') {
             result = status.schema_name;
         }
@@ -115,14 +117,19 @@ std::string RimeState::subModeLabel() {
         if (status.is_disabled) {
             result = "";
         } else if (status.is_ascii_mode) {
-            result = asciiModeName(/*abbrev=*/true);
-        } else if (status.schema_name && status.schema_name[0] != '.') {
-            result = status.schema_name;
-            if (!result.empty() &&
-                utf8::lengthValidated(result) != utf8::INVALID_LENGTH) {
-                result = result.substr(
-                    0, std::distance(result.begin(),
-                                     utf8::nextChar(result.begin())));
+            result = asciiModeName(/*abbrev=*/true, true);
+        } else {
+            if (engine_->config().latinModeNameFromSchema.value()) {
+                result = asciiModeName(/*abbrev=*/true, false);
+                RIME_DEBUG() << "exit_ansii: " << result;
+            } else if (status.schema_name && status.schema_name[0] != '.') {
+                result = status.schema_name;
+                if (!result.empty() &&
+                    utf8::lengthValidated(result) != utf8::INVALID_LENGTH) {
+                    result = result.substr(
+                        0, std::distance(result.begin(),
+                                         utf8::nextChar(result.begin())));
+                }
             }
         }
     });
