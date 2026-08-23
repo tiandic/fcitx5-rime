@@ -135,3 +135,19 @@ msgstr "中州韵输入法"
 #: src/rime-addon.conf.in.in:3
 msgid "Rime Wrapper For Fcitx"
 msgstr "Fcitx 的中州韵封装"
+
+#: src/rimeengine.h:121
+msgid "Caps Lock label prompt"
+msgstr "大写锁定的 label 提示"
+
+#: src/rimeengine.h:123
+msgid "Chinese mode icon"
+msgstr "中文模式图标"
+
+#: src/rimeengine.h:125
+msgid "ASCII mode icon"
+msgstr "ASCII 模式图标"
+
+#: src/rimeengine.h:128
+msgid "Caps Lock icon"
+msgstr "大写锁定图标"

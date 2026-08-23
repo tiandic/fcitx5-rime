@@ -641,7 +641,7 @@ std::string RimeEngine::subModeIconImpl(const InputMethodEntry & /*unused*/,
             if (status.is_disabled) {
                 result = "fcitx_rime_disable";
             } else if (status.is_ascii_mode) {
-                result = config().fcitxRimeANSCIIIconName.value();
+                result = config().fcitxRimeASCIIIconName.value();
                 if (isCapsLockOn(&ic)) {
                     result = config().fcitxRimeCapsLockIconName.value();
                 }

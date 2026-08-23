@@ -133,3 +133,19 @@ msgstr ""
 #: src/rime-addon.conf.in.in:3
 msgid "Rime Wrapper For Fcitx"
 msgstr "Contenidor rime per a fcitx"
+
+#: src/rimeengine.h:121
+msgid "Caps Lock label prompt"
+msgstr ""
+
+#: src/rimeengine.h:123
+msgid "Chinese mode icon"
+msgstr ""
+
+#: src/rimeengine.h:125
+msgid "ASCII mode icon"
+msgstr ""
+
+#: src/rimeengine.h:128
+msgid "Caps Lock icon"
+msgstr ""

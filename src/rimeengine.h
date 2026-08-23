@@ -121,8 +121,8 @@ FCITX_CONFIGURATION(
                                             _("Caps Lock label prompt"), "ABC"};
     Option<std::string> fcitxRimeIconName{this, "fcitxRimeIconName",
                                           _("Chinese mode icon"), "fcitx-rime"};
-    Option<std::string> fcitxRimeANSCIIIconName{this, "fcitxRimeANSCIIIconName",
-                                                _("ANSCII mode icon"),
+    Option<std::string> fcitxRimeASCIIIconName{this, "fcitxRimeANSCIIIconName",
+                                                _("ASCII mode icon"),
                                                 "fcitx_rime_latin"};
     Option<std::string> fcitxRimeCapsLockIconName{
         this, "fcitxRimeCapsLockIconName", _("Caps Lock icon"),
