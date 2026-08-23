@@ -93,7 +93,7 @@ msgid "Synchronize"
 msgstr "동기화"
 
 #: src/rimeengine.h:118
-msgid "Use latin mode name defined in schema"
+msgid "Use the schema's abbrev as the hint label"
 msgstr ""
 
 #: src/rimecandidate.cpp:157

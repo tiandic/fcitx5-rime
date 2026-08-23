@@ -96,8 +96,8 @@ msgid "Synchronize"
 msgstr "Синхронизировать"
 
 #: src/rimeengine.h:118
-msgid "Use latin mode name defined in schema"
-msgstr "Использовать название режима на латинице, определенное в схеме"
+msgid "Use the schema's abbrev as the hint label"
+msgstr "Используйте аббревиатуру схемы в качестве метки подсказки"
 
 #: src/rimecandidate.cpp:157
 msgid "Forget word"

@@ -116,7 +116,7 @@ FCITX_CONFIGURATION(
         this, "Synchronize", _("Synchronize"), {}};
     Option<bool> latinModeNameFromSchema{
         this, "LatinModeNameFromSchema",
-        _("Use latin mode name defined in schema"), false};
+        _("Use the schema's abbrev as the hint label"), false};
     Option<std::string> capsLockLabelPrompt{
         this, "CapsLockLabelPrompt", _("Caps Lock label prompt"), "ABC"};);
 
