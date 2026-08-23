@@ -641,12 +641,12 @@ std::string RimeEngine::subModeIconImpl(const InputMethodEntry & /*unused*/,
             if (status.is_disabled) {
                 result = "fcitx_rime_disable";
             } else if (status.is_ascii_mode) {
-                result = "fcitx_rime_latin";
+                result = config().fcitxRimeANSCIIIconName.value();
                 if (isCapsLockOn(&ic)) {
-                    result = "fcitx_rime_latin_upper";
+                    result = config().fcitxRimeCapsLockIconName.value();
                 }
             } else {
-                result = "fcitx-rime";
+                result = config().fcitxRimeIconName.value();
             }
         });
     }

@@ -117,8 +117,16 @@ FCITX_CONFIGURATION(
     Option<bool> latinModeNameFromSchema{
         this, "LatinModeNameFromSchema",
         _("Use the schema's abbrev as the hint label"), false};
-    Option<std::string> capsLockLabelPrompt{
-        this, "CapsLockLabelPrompt", _("Caps Lock label prompt"), "ABC"};);
+    Option<std::string> capsLockLabelPrompt{this, "CapsLockLabelPrompt",
+                                            _("Caps Lock label prompt"), "ABC"};
+    Option<std::string> fcitxRimeIconName{this, "fcitxRimeIconName",
+                                          _("Chinese mode icon"), "fcitx-rime"};
+    Option<std::string> fcitxRimeANSCIIIconName{this, "fcitxRimeANSCIIIconName",
+                                                _("ANSCII mode icon"),
+                                                "fcitx_rime_latin"};
+    Option<std::string> fcitxRimeCapsLockIconName{
+        this, "fcitxRimeCapsLockIconName", _("Caps Lock icon"),
+        "fcitx_rime_latin_upper"};);
 
 class RimeEngine final : public InputMethodEngineV2 {
 public:
