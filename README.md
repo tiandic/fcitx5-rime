@@ -17,8 +17,14 @@ tiandic 的修改版
 
 ### 自定义图标示例
 
-假设自定义ASCII模式的图标为 `fc.png`
+我需要自定义ASCII模式的图标为:
 
-1. 在`~/.local/share/icons/hicolor/48x48/apps/`下放置`fc.png`
+<img width="23" height="26" alt="Screenshot from 2026-08-25 11-35-14" src="https://github.com/user-attachments/assets/3745e7fd-ea82-49d2-bb6c-51b8b80aa60f" />
+
+(你可以从 [here](https://github.com/tiandic/dotfiles/blob/main/fctix5-rime-icon/.local/share/icons/hicolor/48x48/apps/fctix_en.svg) 获取, 该`svg`实际只有白色, 上图的黑色背景是我的系统主题)
+
+图标的文件名为 `fctix_en.svg`
+
+1. 在`~/.local/share/icons/hicolor/48x48/apps/`下放置`fctix_en.svg`
 2. 更新缓存: `gtk-update-icon-cache -f -t ~/.local/share/icons/hicolor`
-3. `fcitx5-configtool` -> `中州韵` -> `配置` -> `ASCII 模式图标` 填写 `fc`
+3. `fcitx5-configtool` -> `中州韵` -> `配置` -> `ASCII 模式图标` 填写 `fctix_en`
