@@ -8,6 +8,11 @@ RIME(中州韻輸入法引擎) is _mainly_ a Traditional Chinese input method en
 
 tiandic 的修改版
 
+使用AUR安装:
+```
+yay -S td-fcitx5-rime-git
+```
+
 包含如下修改:
 1. 允许通过`abbrev`自定义退出ASCII模式的label提示
 2. 允许自定义进入大写锁定的label提示
