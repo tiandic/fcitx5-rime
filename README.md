@@ -21,7 +21,7 @@ tiandic 的修改版
 
 <img width="23" height="26" alt="Screenshot from 2026-08-25 11-35-14" src="https://github.com/user-attachments/assets/3745e7fd-ea82-49d2-bb6c-51b8b80aa60f" />
 
-(你可以从 [here](https://github.com/tiandic/dotfiles/blob/main/fctix5-rime-icon/.local/share/icons/hicolor/48x48/apps/fctix_en.svg) 获取, 该`svg`实际只有白色, 上图的黑色背景是我的系统主题)
+(你可以从 [here](https://github.com/tiandic/dotfiles/blob/main/fctix5-rime/.local/share/icons/hicolor/48x48/apps/fctix_en.svg) 获取, 该`svg`实际只有白色, 上图的黑色背景是我的系统主题)
 
 图标的文件名为 `fctix_en.svg`
 
