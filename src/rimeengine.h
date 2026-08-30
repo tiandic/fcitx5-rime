@@ -122,11 +122,14 @@ FCITX_CONFIGURATION(
     Option<std::string> fcitxRimeIconName{this, "fcitxRimeIconName",
                                           _("Chinese mode icon"), "fcitx-rime"};
     Option<std::string> fcitxRimeASCIIIconName{this, "fcitxRimeANSCIIIconName",
-                                                _("ASCII mode icon"),
-                                                "fcitx_rime_latin"};
+                                               _("ASCII mode icon"),
+                                               "fcitx_rime_latin"};
     Option<std::string> fcitxRimeCapsLockIconName{
         this, "fcitxRimeCapsLockIconName", _("Caps Lock icon"),
-        "fcitx_rime_latin_upper"};);
+        "fcitx_rime_latin_upper"};
+    Option<bool> applyAppOptionOnFocusChange{
+        this, "ApplyAppOptionOnFocusChange",
+        _("Apply app_option to status on focus change"), false};);
 
 class RimeEngine final : public InputMethodEngineV2 {
 public:
