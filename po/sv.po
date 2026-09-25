@@ -3,9 +3,7 @@
 # This file is distributed under the same license as the fcitx5-rime package.
 #
 # Translators:
-# rocka, 2023
-# Yiyu Liu, 2024
-# Xuetian Weng <wengxt@gmail.com>, 2026
+# Daniel Nylander <po@danielnylander.se>, 2026
 #
 msgid ""
 msgstr ""
@@ -13,141 +11,125 @@ msgstr ""
 "Report-Msgid-Bugs-To: fcitx-dev@googlegroups.com\n"
 "POT-Creation-Date: 2026-09-04 20:24+0000\n"
 "PO-Revision-Date: 2017-11-23 05:02+0000\n"
-"Last-Translator: Xuetian Weng <wengxt@gmail.com>, 2026\n"
-"Language-Team: Chinese (China) (https://app.transifex.com/fcitx/teams/12005/"
-"zh_CN/)\n"
-"Language: zh_CN\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
+"Language-Team: Swedish (https://app.transifex.com/fcitx/teams/12005/sv/)\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/rimeengine.h:60
 msgid "Follow Global Configuration"
-msgstr "跟随全局选项"
+msgstr "Följ den globala konfigurationen"
 
 #: src/rimeengine.h:60
 msgid "All"
-msgstr "全部"
+msgstr "Alla"
 
 #: src/rimeengine.h:61
 msgid "Program"
-msgstr "程序"
+msgstr "Program"
 
 #: src/rimeengine.h:61
 msgid "No"
-msgstr "否"
+msgstr "Nej"
 
 #: src/rimeengine.h:65
 msgid "Do not show"
-msgstr "不显示"
+msgstr "Visa inte"
 
 #: src/rimeengine.h:66
 msgid "Composing text"
-msgstr "编辑中文本"
+msgstr "Text som sammanställs"
 
 #: src/rimeengine.h:66
 msgid "Commit preview"
-msgstr "提交预览"
+msgstr "Förhandsvisning av bekräftelse"
 
 #: src/rimeengine.h:75
 msgid "Clear"
-msgstr "清空"
+msgstr "Rensa"
 
 #: src/rimeengine.h:76
 msgid "Commit raw input"
-msgstr "提交原始字符串"
+msgstr "Bekräfta rå inmatning"
 
 #: src/rimeengine.h:77
 msgid "Commit composing text"
-msgstr "提交编辑中文本"
+msgstr "Bekräfta text som sammanställs"
 
 #: src/rimeengine.h:78
 msgid "Commit commit preview"
-msgstr "提交预览"
+msgstr "Bekräfta förhandsvisning"
 
 #: src/rimeengine.h:83
 msgid "Preedit Mode"
-msgstr "预编辑模式"
+msgstr "Förredigeringsläge"
 
 #: src/rimeengine.h:86
 msgid "Shared Input State"
-msgstr "共享输入状态"
+msgstr "Delat inmatningstillstånd"
 
 #: src/rimeengine.h:93
 msgid "Fix embedded preedit cursor at the beginning of the preedit"
-msgstr "将嵌入式预编辑文本的光标固定在开头"
+msgstr ""
+"Korrigera den inbäddade förredigeringsmarkören till början av förredigeringen"
 
 #: src/rimeengine.h:99
 msgid "Action when switching input method"
-msgstr "切换输入法时的行为"
+msgstr "Åtgärd vid byte av inmatningsmetod"
 
 #: src/rimeengine.h:102
 msgid "User data dir"
-msgstr "用户数据目录"
+msgstr "Användardatakatalog"
 
 #: src/rimeengine.h:112 src/rimeengine.cpp:207
 msgid "Deploy"
-msgstr "重新部署"
+msgstr "Verkställ"
 
 #: src/rimeengine.h:116 src/rimeengine.cpp:219
 msgid "Synchronize"
-msgstr "同步"
+msgstr "Synkronisera"
 
 #: src/rimeengine.h:119
-msgid "Use the schema's abbrev as the hint label"
-msgstr "用 schema 的 abbrev 作为 label 提示"
+msgid "Use latin mode name defined in schema"
+msgstr "Använd latinskt lägesnamn som definieras i schemat"
 
 #: src/rimecandidate.cpp:157
 msgid "Forget word"
-msgstr "忘记词汇"
+msgstr "Glöm ord"
 
 #: src/rimestate.cpp:78 src/rimeengine.cpp:733
 msgid "Latin Mode"
-msgstr "英文模式"
+msgstr "Latinskt läge"
 
 #: src/rimeengine.cpp:567
 msgid ""
 "Rime is under maintenance. It may take a few seconds. Please wait until it "
 "is finished..."
-msgstr "Rime 正在进行维护程序。可能需要几秒钟。请等待完成……"
+msgstr "Rime underhålls. Det kan ta några sekunder. Vänta tills det är klart …"
 
 #: src/rimeengine.cpp:570
 msgid "Rime is ready."
-msgstr "Rime 就绪。"
+msgstr "Rime är klart."
 
 #: src/rimeengine.cpp:583
 msgid "Rime has encountered an error. See log for details."
-msgstr "Rime 出现了一个错误。详细信息请参阅日志。"
+msgstr "Rime har stött på ett fel. Se loggen för detaljer."
 
 #: src/rimeengine.cpp:601 src/rime.conf.in:2 src/rime-addon.conf.in.in:2
 msgid "Rime"
-msgstr "中州韵"
+msgstr "Rime"
 
 #: org.fcitx.Fcitx5.Addon.Rime.metainfo.xml.in:7
 msgid "Rime for Fcitx 5"
-msgstr "Fcitx 5 的中州韵支持"
+msgstr "Rime för Fcitx 5"
 
 #: org.fcitx.Fcitx5.Addon.Rime.metainfo.xml.in:8
 msgid "Rime input method"
-msgstr "中州韵输入法"
+msgstr "Rime-inmatningsmetod"
 
 #: src/rime-addon.conf.in.in:3
 msgid "Rime Wrapper For Fcitx"
-msgstr "Fcitx 的中州韵封装"
-
-#: src/rimeengine.h:121
-msgid "Caps Lock label prompt"
-msgstr "大写锁定的 label 提示"
-
-#: src/rimeengine.h:123
-msgid "Chinese mode icon"
-msgstr "中文模式图标"
-
-#: src/rimeengine.h:125
-msgid "ASCII mode icon"
-msgstr "ASCII 模式图标"
-
-#: src/rimeengine.h:128
-msgid "Caps Lock icon"
-msgstr "大写锁定图标"
+msgstr "Rime-omslag för Fcitx"

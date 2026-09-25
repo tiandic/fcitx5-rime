@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.6.0)
 
-project(fcitx5-rime VERSION 5.1.14)
+project(fcitx5-rime VERSION 5.1.17)
 
 set(REQUIRED_FCITX_VERSION 5.1.22)
 
@@ -24,9 +24,6 @@ endif()
 
 if ("${Rime_VERSION}" VERSION_LESS "1.10.0")
     add_definitions(-DFCITX_RIME_NO_HIGHLIGHT_CANDIDATE)
-endif()
-if ("${Rime_VERSION}" VERSION_LESS "1.8.0")
-    add_definitions(-DFCITX_RIME_NO_DELETE_CANDIDATE)
 endif()
 
 if(NOT DEFINED RIME_DATA_DIR)
